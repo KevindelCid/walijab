@@ -27,6 +27,15 @@ Route::get('nawales/ver', function () {
     
     return view('nawales/ver');
 });
+Route::get('aprender', function () {
+    
+    return view('aprender/index');
+})->name('aprender.index');
+
+Route::get('preguntas', function () {
+    
+    return view('preguntas/index');
+})->name('preguntas.index');
 Route::get('ajqijab', function () {
     
     return view('ajqijab');

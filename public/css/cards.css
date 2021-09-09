@@ -1,140 +1,168 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-
-html,body{
-
-
-    margin: 0;
-    padding: 0;
+html, body {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-
-    width: 100%;
-    height: 10%;
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 0.03em;
-    line-height: 1.6;
-
-}
-title{
-
-    text-align: center;
-    font-size: 40px;
-    color: #232323;
-    margin-top: 100px;
-    font-weight: 100;
+body {
+  width: 100%;
+  height: 10%;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+  line-height: 1.6;
 }
 
-.conti{
-width: 100%;
-max-width: 	1200px;
-height: 30px;
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-margin: auto;
+title {
+  text-align: center;
+  font-size: 40px;
+  color: #232323;
+  margin-top: 100px;
+  font-weight: 100;
 }
 
-.conti .card{
-
-width: 230px;
-height: 30px;
-border-radius: 8px;
-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-overflow: hidden;
-margin: -10px;
-text-align: center;
-transition: all 0.50s;
+.conti {
+  width: 100%;
+  max-width: 1200px;
+  height: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
 }
 
-
-.conti .card:hover{
-transform: translateY(-5px);
-box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+.conti .card {
+  width: 230px;
+  height: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: -10px;
+  text-align: center;
+  transition: all 0.50s;
 }
 
-
-.conti .card img{
-
-width: 330px;
-height: 220px;
-
+.conti .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
-.conti .card h4	{
+.conti .card img {
+  width: 330px;
+  height: 220px;
+}
 
-    font-weight: 600;
-    }
+.conti .card h4 {
+  font-weight: 600;
+}
 
-    .conti .card p{
+.conti .card p {
+  padding: 0 1rem;
+  font-size: 11px;
+  font-weight: 300;
+  Word-wrap: break-Word;
+}
 
-        padding: 0 1rem;
-        font-size: 11px;
-        font-weight: 300;
-        Word-wrap: break-Word;
+.conti .card a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #000000;
+  position: relative;
+}
 
-        }
+.module {
+  width: 230px;
+  margin: 0 0 1em 0;
+  overflow: hidden;
+}
 
-        .conti .card a{
+.module p {
+  margin: 0;
+}
 
-           font-weight: 500;
-           text-decoration: none;
-           color:#000000;
-            position: relative;
-            }
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
 
-            .module {
-                width: 230px;
-                margin: 0 0 1em 0;
-                overflow: hidden;
-              }
-              
-              .module p {
-                margin: 0;
-              }
-              
-              .line-clamp {
-                display: -webkit-box;
-                -webkit-line-clamp: 4;
-                -webkit-box-orient: vertical;
-              }
+.flo img {
+  margin: -4 px;
+  -webkit-transition: margin 0.5s ease-out;
+  -moz-transition: margin 0.5s ease-out;
+  -ms-transition: margin 0.5s ease-out;
+  transition: margin 0.5s ease-out;
+}
 
+.ex1 :hover {
+  margin-top: 2px;
+}
 
-              img {
-                
-            
-                margin: -4 px;
-                -webkit-transition: margin 0.5s ease-out;
-                -moz-transition: margin 0.5s ease-out;
-                -ms-transition: margin 0.5s ease-out;
-                transition: margin 0.5s ease-out;
-                }
-                .ex1 :hover {
-                margin-top: 2px;
-                }
+.vv a img {
+  margin: -20px !important;
+}
 
+.ex1 :hover {
+  margin-top: 2px;
+}
 
+.efecto:hover {
+  opacity: .5
+}
 
+ .flo:hover {
+  opacity: 0.9;
+  transform: translateY(-5px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  transition: all 0.50s;
+}
+.modal-body{
 
-                .vv a img  {
-                
-            
-                  margin: -20px !important;
-               
-                  }
-                  .ex1 :hover {
-                  margin-top: 2px;
-                  }
+  /* padding: 9px 15px; */
+  color: #414141;
+  text-align:center;
+  background-color: #ececec;
+  /* -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px; */
+  /* -moz-border-radius-topright: 5px; */
+  /* border-top-left-radius: 5px;
+  border-top-right-radius: 5px; */
+}
+.modal-title{
+text-align:center;
 
-                .efecto:hover{
-                  opacity:.5
-                }
-                div img:hover{
-                  opacity: 0.9;
-                  transform: translateY(-5px);
-box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-transition: all 0.50s;
-                }
+}
+.modal-content{
+  text-align:center;
+  background-color: #ececec;
+  padding: 2px 2px;
+  margin-top: 0px;
+}
+.modal-body{
+  text-align:center;
+ padding: 2px 22px;
+ margin-top: 0px;
+ top: -12px;
 
+}
+.modal-header {
+  text-align:center;
+ 
+  color: #414141;
+  border-bottom: 0px solid #eee;
+  background-color: #4987cf;
+  /* -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px; */
+}
+
+.navbar {
+  background-color: #4987cf;
+}
+
+.nav-link {
+  color: #f0f0f0;
+}

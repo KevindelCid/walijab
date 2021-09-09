@@ -53,7 +53,7 @@ document.getElementById('obj3').style.display = 'block';
 </head>
 <body class="fondo opacity">
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm">
+        <nav class="navbar navbar-expand-md  ">
             <div class="container">
             
                     <img id="" class="" src="{{ asset('storage').'/walijab.png' }}" width="120" alt="">
@@ -74,6 +74,9 @@ document.getElementById('obj3').style.display = 'block';
                        
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('ajqijab.index') }}">{{ __('Ajq\'ijab') }}</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link" href="{{ route('aprender.index') }}">{{ __('Aprender') }}</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('ajqijab.eres') }}">{{ __('¿Eres un ajq\'ij?') }}</a>
