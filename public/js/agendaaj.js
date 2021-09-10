@@ -35,12 +35,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 var id;
 
-$( "#comprarevento" ).click(function() {
- 
-  window.location="http://localhost/walijab/public";
-   // postForm('http://localhost/walijab/public/pagar', {arg1: titulon, arg2: 'value2'});
 
-  });
 
 
   var idn = $("#iid").val();
@@ -122,7 +117,7 @@ titulon = info.event.title;
 
             $.ajax({
                 type:'POST',
-                url: 'http://localhost/walijab/public/evento?id='+id,
+                url: baseURL+'/evento?id='+id,
                 data: {id:id},
                   headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
                   
@@ -153,7 +148,7 @@ titulon = info.event.title;
       
         editable: true,
      
-        eventSources:  'http://localhost/walijab/public/ajqijab/perfil/srcs/'+idn,
+        eventSources:  baseURL+'/ajqijab/perfil/srcs/'+idn,
         
       });
   

@@ -28,9 +28,9 @@
 
 
                 <div class="centrar">
-                    <h2>9 Lunaciones, energías totales: <b id="totalE"></b> </h2>
+                    <h2 id="txt" hidden>9 Lunaciones, energías totales: <b id="totalE"></b> </h2>
 
-                    <h6>fecha</h6>
+                    <h6 id="fecho">fecha</h6>
 
 
                     <div class="col-md-12">

@@ -11067,3 +11067,15 @@ text-align: right;
 
 
 }
+
+
+/* 
+
+#calendar td.fc-day {
+  background: url('http://localhost/walijab/public/storage/naw/E.png') no-repeat;
+  background-size: contain; 
+ 
+}
+#calendar a.fc-event {
+  opacity: 0.75;
+} */

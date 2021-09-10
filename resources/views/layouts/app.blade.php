@@ -49,7 +49,9 @@ document.getElementById('obj3').style.display = 'block';
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.9.0/main.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.9.0/locales-all.js"></script>
  <!-- include one of the moment-timezone builds -->
-
+<script type="text/javascript">
+var baseURL = {!! json_encode(url('/')) !!}
+</script>
 </head>
 <body class="fondo opacity">
     <div id="app">
@@ -75,13 +77,28 @@ document.getElementById('obj3').style.display = 'block';
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('ajqijab.index') }}">{{ __('Ajq\'ijab') }}</a>
                         </li>
-                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('aprender.index') }}">{{ __('Aprender') }}</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('ajqijab.eres') }}">{{ __('¿Eres un ajq\'ij?') }}</a>
-                        </li>
-                      
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             Aprender
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <a class="dropdown-item" href="{{ route('preguntas.index') }}">Juego de Preguntas</a>
+                              <a class="dropdown-item" href="{{ route('orden.index') }}">Nombre de los Nawales</a>
+                              <a class="dropdown-item" href="#">Completa el día</a>
+                            </div>
+                          </li>
+                          
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             Acerca de
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <a class="dropdown-item" href="{{ route('preguntas.index') }}">Documentación</a>
+                              <a class="dropdown-item" href="{{ route('orden.index') }}">Este proyecto</a>
+                              <a class="dropdown-item" href="#">Personas</a>
+                            </div>
+                          </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -115,7 +132,7 @@ document.getElementById('obj3').style.display = 'block';
                                     <a class="dropdown-item" href="{{ route('home') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
+                                        {{ __('Cerrar sesión') }}
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">

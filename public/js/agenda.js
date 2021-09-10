@@ -55,6 +55,17 @@ document.addEventListener('DOMContentLoaded', function() {
       var calendarEl = document.getElementById('agenda');
     
  calendar = new FullCalendar.Calendar(calendarEl, {
+
+
+
+    // dayRender: function (date, cell) {
+    //     cell.addClass("cosasss");
+    //     cell.css("background","url(http://localhost/walijab/public/storage/naw/E.png) no-repeat center");
+    //     cell.css("background-size","contain")
+    // },
+    // eventRender: function(event, element) {
+    //     $(element).css("opacity", "0.75");
+    // },
         
             timeZone: 'local',
         initialView: 'dayGridMonth',
@@ -70,10 +81,16 @@ document.addEventListener('DOMContentLoaded', function() {
     
         },
      
+      
 
         navLinks: true, // can click day/week names to navigate views
         selectable: true,
         selectMirror: true,
+
+    
+
+
+
         select: function(arg) {
         
             let m = moment(arg.start).format("YYYY-MM-DD");
@@ -97,7 +114,12 @@ console.log(hora_inicio, hora_finalizacion, m);
                 weekdaysShort: 'Dom._Lun._Mar._Mier._Jue._Vier._Sab.'.split('_'),
                 weekdaysMin: 'Do_Lu_Ma_Mi_Ju_Vi_Sa'.split('_')
               }
+
+
+              
               );
+
+             
             let hora_inicioE = moment(info.event.start).format("hh:mm A");
             let fecha_inicioE = moment(info.event.start).format("dddd DD [de] MMMM [de] YYYY");
 
@@ -113,7 +135,7 @@ console.log(hora_inicio, hora_finalizacion, m);
 
             $.ajax({
                 type:'POST',
-                url: 'http://localhost/walijab/public/perfil/eventito?id='+id,
+                url: baseURL+'/perfil/eventito?id='+id,
                 data: {id:id},
                   headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
                   
@@ -142,9 +164,10 @@ console.log(hora_inicio, hora_finalizacion, m);
       
         editable: true,
      
-        eventSources:  'http://localhost/walijab/public/perfil/listar',
+        eventSources:  baseURL+'/perfil/listar',
         
       });
+      
   
 
 
@@ -214,7 +237,7 @@ console.log(hora_inicio, hora_finalizacion, m);
           
             $.ajax({
                 type:'POST',
-                url: 'http://localhost/walijab/public/perfil/guardar',
+                url: baseURL+'/perfil/guardar',
                 data:fd,
                 cache:false,
                 contentType: false,
