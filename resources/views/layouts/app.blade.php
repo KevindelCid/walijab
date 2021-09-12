@@ -84,7 +84,7 @@ var baseURL = {!! json_encode(url('/')) !!}
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                               <a class="dropdown-item" href="{{ route('preguntas.index') }}">Juego de Preguntas</a>
                               <a class="dropdown-item" href="{{ route('orden.index') }}">Nombre de los Nawales</a>
-                              <a class="dropdown-item" href="#">Completa el día</a>
+                              <a class="dropdown-item" href="{{ route('sopa') }}">Sopa de letras Maya</a>
                             </div>
                           </li>
                           

@@ -45,42 +45,42 @@ function calcularNawal() {
     document.getElementById("imgnAEI").src=baseURL+"/storage/naw/"+lunas[1]+".png";
     let imgAEI =  document.querySelector("#imgnAEI")
     imgAEI.removeAttribute("hidden");
-    document.getElementById("mimgnAEI").src=baseURL+"/storage/naw/"+lunas[1]+".png";
+    document.getElementById("mimgnAEI").src=baseURL+"/storage/"+lunas[1]+".png";
 
     let nE = document.querySelector("#nawalE")
     nE.innerHTML = lunas[2] + " " + lunas[3];
     document.getElementById("imgnE").src=baseURL+"/storage/naw/"+lunas[3]+".png";
     let imgE =  document.querySelector("#imgnE")
     imgE.removeAttribute("hidden");
-    document.getElementById("mimgnE").src=baseURL+"/storage/naw/"+lunas[3]+".png";
+    document.getElementById("mimgnE").src=baseURL+"/storage/"+lunas[3]+".png";
 
     let nAED = document.querySelector("#nawalAED")
     nAED.innerHTML = lunas[4] + " " + lunas[5];
     document.getElementById("imgnAED").src=baseURL+"/storage/naw/"+lunas[5]+".png";
     let imgAED =  document.querySelector("#imgnAED")
     imgAED.removeAttribute("hidden");
-    document.getElementById("mimgnAED").src=baseURL+"/storage/naw/"+lunas[5]+".png";
+    document.getElementById("mimgnAED").src=baseURL+"/storage/"+lunas[5]+".png";
 
     let nAI = document.querySelector("#nawalAI")
     nAI.innerHTML = lunas[6] + " " + lunas[7];
     document.getElementById("imgnAI").src=baseURL+"/storage/naw/"+lunas[7]+".png";
     let imgAI =  document.querySelector("#imgnAI")
     imgAI.removeAttribute("hidden");
-    document.getElementById("mimgnAI").src=baseURL+"/storage/naw/"+lunas[7]+".png";
+    document.getElementById("mimgnAI").src=baseURL+"/storage/"+lunas[7]+".png";
 
     let n = document.querySelector("#nawal")
     n.innerHTML = lunas[8] + " " + lunas[9];
     document.getElementById("imgn").src=baseURL+"/storage/naw/"+lunas[9]+".png";
     let img =  document.querySelector("#imgn")
     img.removeAttribute("hidden");
-    document.getElementById("mimgn").src=baseURL+"/storage/naw/"+lunas[9]+".png";
+    document.getElementById("mimgn").src=baseURL+"/storage/"+lunas[9]+".png";
 
     let nAD = document.querySelector("#nawalAD")
     nAD.innerHTML = lunas[10] + " " + lunas[11];
     document.getElementById("imgnAD").src=baseURL+"/storage/naw/"+lunas[11]+".png";
     let imgAD =  document.querySelector("#imgnAD")
     imgAD.removeAttribute("hidden");
-    document.getElementById("mimgnAD").src=baseURL+"/storage/naw/"+lunas[11]+".png";
+    document.getElementById("mimgnAD").src=baseURL+"/storage/"+lunas[11]+".png";
 
 
     let nADI = document.querySelector("#nawalADI")
@@ -88,21 +88,21 @@ function calcularNawal() {
     document.getElementById("imgnADI").src=baseURL+"/storage/naw/"+lunas[13]+".png";
     let imgADI =  document.querySelector("#imgnADI")
     imgADI.removeAttribute("hidden");
-    document.getElementById("mimgnADI").src=baseURL+"/storage/naw/"+lunas[13]+".png";
+    document.getElementById("mimgnADI").src=baseURL+"/storage/"+lunas[13]+".png";
 
     let nD = document.querySelector("#nawalD")
     nD.innerHTML = lunas[14] + " " + lunas[15];
     document.getElementById("imgnD").src=baseURL+"/storage/naw/"+lunas[15]+".png";
     let imgD =  document.querySelector("#imgnD")
     imgD.removeAttribute("hidden");
-    document.getElementById("mimgnD").src=baseURL+"/storage/naw/"+lunas[15]+".png";
+    document.getElementById("mimgnD").src=baseURL+"/storage/"+lunas[15]+".png";
 
     let nADD = document.querySelector("#nawalADD")
     nADD.innerHTML = lunas[16] + " " + lunas[17];
     document.getElementById("imgnADD").src=baseURL+"/storage/naw/"+lunas[17]+".png";
     let imgADD =  document.querySelector("#imgnADD")
     imgADD.removeAttribute("hidden");
-    document.getElementById("mimgnADD").src=baseURL+"/storage/naw/"+lunas[17]+".png";
+    document.getElementById("mimgnADD").src=baseURL+"/storage/"+lunas[17]+".png";
 
 
 
@@ -145,42 +145,42 @@ function calcularNawalHoy() {
     document.getElementById("imgnAEI").src=baseURL+"/storage/naw/"+lunas[1]+".png";
     let imgAEI =  document.querySelector("#imgnAEI")
     imgAEI.removeAttribute("hidden");
-    document.getElementById("mimgnAEI").src=baseURL+"/storage/naw/"+lunas[1]+".png";
+    document.getElementById("mimgnAEI").src=baseURL+"/storage/"+lunas[1]+".png";
 
     let nE = document.querySelector("#nawalE")
     nE.innerHTML = lunas[2] + " " + lunas[3];
     document.getElementById("imgnE").src=baseURL+"/storage/naw/"+lunas[3]+".png";
     let imgE =  document.querySelector("#imgnE")
     imgE.removeAttribute("hidden");
-    document.getElementById("mimgnE").src=baseURL+"/storage/naw/"+lunas[3]+".png";
+    document.getElementById("mimgnE").src=baseURL+"/storage/"+lunas[3]+".png";
 
     let nAED = document.querySelector("#nawalAED")
     nAED.innerHTML = lunas[4] + " " + lunas[5];
     document.getElementById("imgnAED").src=baseURL+"/storage/naw/"+lunas[5]+".png";
     let imgAED =  document.querySelector("#imgnAED")
     imgAED.removeAttribute("hidden");
-    document.getElementById("mimgnAED").src=baseURL+"/storage/naw/"+lunas[5]+".png";
+    document.getElementById("mimgnAED").src=baseURL+"/storage/"+lunas[5]+".png";
 
     let nAI = document.querySelector("#nawalAI")
     nAI.innerHTML = lunas[6] + " " + lunas[7];
     document.getElementById("imgnAI").src=baseURL+"/storage/naw/"+lunas[7]+".png";
     let imgAI =  document.querySelector("#imgnAI")
     imgAI.removeAttribute("hidden");
-    document.getElementById("mimgnAI").src=baseURL+"/storage/naw/"+lunas[7]+".png";
+    document.getElementById("mimgnAI").src=baseURL+"/storage/"+lunas[7]+".png";
 
     let n = document.querySelector("#nawal")
     n.innerHTML = lunas[8] + " " + lunas[9];
     document.getElementById("imgn").src=baseURL+"/storage/naw/"+lunas[9]+".png";
     let img =  document.querySelector("#imgn")
     img.removeAttribute("hidden");
-    document.getElementById("mimgn").src=baseURL+"/storage/naw/"+lunas[9]+".png";
+    document.getElementById("mimgn").src=baseURL+"/storage/"+lunas[9]+".png";
 
     let nAD = document.querySelector("#nawalAD")
     nAD.innerHTML = lunas[10] + " " + lunas[11];
     document.getElementById("imgnAD").src=baseURL+"/storage/naw/"+lunas[11]+".png";
     let imgAD =  document.querySelector("#imgnAD")
     imgAD.removeAttribute("hidden");
-    document.getElementById("mimgnAD").src=baseURL+"/storage/naw/"+lunas[11]+".png";
+    document.getElementById("mimgnAD").src=baseURL+"/storage/"+lunas[11]+".png";
 
 
     let nADI = document.querySelector("#nawalADI")
@@ -188,21 +188,21 @@ function calcularNawalHoy() {
     document.getElementById("imgnADI").src=baseURL+"/storage/naw/"+lunas[13]+".png";
     let imgADI =  document.querySelector("#imgnADI")
     imgADI.removeAttribute("hidden");
-    document.getElementById("mimgnADI").src=baseURL+"/storage/naw/"+lunas[13]+".png";
+    document.getElementById("mimgnADI").src=baseURL+"/storage/"+lunas[13]+".png";
 
     let nD = document.querySelector("#nawalD")
     nD.innerHTML = lunas[14] + " " + lunas[15];
     document.getElementById("imgnD").src=baseURL+"/storage/naw/"+lunas[15]+".png";
     let imgD =  document.querySelector("#imgnD")
     imgD.removeAttribute("hidden");
-    document.getElementById("mimgnD").src=baseURL+"/storage/naw/"+lunas[15]+".png";
+    document.getElementById("mimgnD").src=baseURL+"/storage/"+lunas[15]+".png";
 
     let nADD = document.querySelector("#nawalADD")
     nADD.innerHTML = lunas[16] + " " + lunas[17];
     document.getElementById("imgnADD").src=baseURL+"/storage/naw/"+lunas[17]+".png";
     let imgADD =  document.querySelector("#imgnADD")
     imgADD.removeAttribute("hidden");
-    document.getElementById("mimgnADD").src=baseURL+"/storage/naw/"+lunas[17]+".png";
+    document.getElementById("mimgnADD").src=baseURL+"/storage/"+lunas[17]+".png";
 
     let tE = document.querySelector("#totalE")
     tE.innerHTML = lunas[18];

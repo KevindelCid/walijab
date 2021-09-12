@@ -43,6 +43,12 @@ Route::get('orden_nawales', function () {
     return view('orden/orden_nawales');
 })->name('orden.index');
 
+Route::get('jugar/sopadeletras', function () {
+    
+    return view('sopa/sopadeletras');
+})->name('sopa');
+
+
 
 Route::get('ajqijab', function () {
     
