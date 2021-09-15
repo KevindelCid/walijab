@@ -20,9 +20,9 @@ function WordSearchController(gameId, listId, solveId, newGameId, instructionsId
 
 		"Términos Mayas": [["cholqij", "maya", "ajqij", "nawal"],
 			["lunaciones", "ancestros", "calendario", "cosmologia"],
-			["astros", "solar", "lunar", "ab"],
-			["cargador", "winal", "ajqijab", "energias"],
-			["astrologia",  "sacerdote maya",  "alineacion", "glifo"]],
+			["astros", "solar", "lunar", "haab"],
+			["cargador", "uinal", "ajqijab", "energias"],
+			["astronomia",  "sacerdote maya",  "codice de madrid", "glifo"]],
 
 		"Nawales": [["batz", "aj", "ix", "tzikin"],
 			["aqabal", "tijax", "keme", "toj"], 

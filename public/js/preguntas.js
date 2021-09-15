@@ -197,7 +197,7 @@ window.onload = function() {
   
   function reiniciar() {
     for (const btn of btn_correspondiente) {
-      btn.style.background = "white"
+      btn.style.background = "rgb(46, 46, 46)"
     }
     escogerPreguntaAleatoria()
   }

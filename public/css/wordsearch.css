@@ -21,10 +21,13 @@ h1, h2, #wordTheme, #solveButton, #newGameButton {
 
  h2, .cell, #wordTheme, #wordlist {
 
-	background-color: white;
+	/* background-color: white; */
 
 }
+h6{
+	font-size: 18px;
 
+}
 h1, h2 {
 
 	margin: 10px auto 10px auto;
@@ -33,9 +36,9 @@ h1, h2 {
 }
 
 body {
-
-	background-color: #EAF7FB;
-
+	color: rgb(243, 243, 243);
+	background: -webkit-linear-gradient(90deg, rgb(107, 106, 98) 10%, rgb(65, 62, 57) 90%);
+	background-attachment:fixed;
 }
 
 #wordTheme {
@@ -83,25 +86,25 @@ body {
 
 .cell:hover {
 
-	background-color: rgb(151, 141, 242);
+	background-color: rgb(149, 126, 63);
 
 }
 
 .cell.selectable {
 
-	background-color: rgb(206, 206, 234);
+	background-color: rgb(110, 110, 153);
 
 }
 
 .cell.selected { 
 
-	background-color: rgb(106, 90, 205);
+	background-color: rgb(155, 89, 46);
 
 }
 
 .cell.found {
 
-	background-color: rgb(158, 123, 158);
+	background-color: rgb(123, 158, 125);
 	border: 1px black solid;
 	font-weight: bold;
 

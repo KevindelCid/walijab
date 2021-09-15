@@ -21,7 +21,7 @@
 
     <div class="col-md-7 form-group ">   
 
-        <h1>Sopa de letras Maya!</h1>
+        <h2 id="ds">Sopa de letras Maya!</h2>
 		{{-- <h2 id = "instructions"></h2> --}}
 		<h5 id = "themeIntro">Temática: <span id = "wordTheme"></span></h5>
 		
@@ -39,8 +39,9 @@
 	
 		<div id = "wordlist"></div>
 
-<h3 class="info" id="info"> </h3>
+<h3 class="info topinfo" id="info">  </h3>
 <img src="" alt="" id="imgpalabra" width="150" style="float:left;">
+<h6 id="def" name="def"></h6>
 
     </div>
 {{-- aqui va la parte de la info --}}
@@ -68,7 +69,7 @@
 					"#wordTheme");
 			})
 		</script>
-{{-- 
+{{--  
 <script>
     var words = ['Develoteca','cursos','ayuda','Videos','Tutoriales','Plugins'];
     var gamePuzzle = wordfindgame.create(words, '#juego', '#Palabras'); 

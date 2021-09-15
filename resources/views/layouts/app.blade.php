@@ -55,7 +55,7 @@ var baseURL = {!! json_encode(url('/')) !!}
 </head>
 <body class="fondo opacity">
     <div id="app">
-        <nav class="navbar navbar-expand-md  ">
+        <nav class="navbar navbar-expand-xl  ">
             <div class="container">
             
                     <img id="" class="" src="{{ asset('storage').'/walijab.png' }}" width="120" alt="">
@@ -82,9 +82,10 @@ var baseURL = {!! json_encode(url('/')) !!}
                              Aprender
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="{{ route('sopa') }}">Sopa de letras Maya</a>
                               <a class="dropdown-item" href="{{ route('preguntas.index') }}">Juego de Preguntas</a>
                               <a class="dropdown-item" href="{{ route('orden.index') }}">Nombre de los Nawales</a>
-                              <a class="dropdown-item" href="{{ route('sopa') }}">Sopa de letras Maya</a>
+                              
                             </div>
                           </li>
                           
