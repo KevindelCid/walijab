@@ -12,11 +12,10 @@
 
                         <input type="date" class="form-control" name="nawalDate" id="nawalDate">
                     </div>
-                    <div class="col-md-4 form-group">
+                    <div class="col-md-2 form-group">
 
                         <input type="submit" onclick="calcularNawal()" class="btn btn-primary" value="Calcular">
                         <input type="submit" onclick="calcularNawalHoy()" class="btn btn-success" value="Hoy">
-                        aqui es hoy
                     </div>
                 </div>
                 <div class="cards-list">
@@ -28,20 +27,18 @@
                         <div class="card_image"> 
                             <img hidden id="imgcargador" src="" />
                          </div>
-                         <div class="carsur">
-                            
                         <div class="card_title ">
-                           <p id="nawalcargador"></p>  
+                            <p id="nawalcargador"></p>
                         </div>
 
                         <div class="card_title1 title-white">
-                            <p  class="des" id="tipocargador"></p>
-                        </div> 
+                            <p>muerte repentina</p>
+                        </div>
                         <div class="card_titlec title-white">
                             <p>Cargador del año</p>
                         </div>
                     </div>
-                    </div>
+
 
 
 
@@ -53,19 +50,18 @@
     <div class="card_image"> 
         <img hidden id="imgfechan" src="" />
      </div>
-     <div class="carsur">
     <div class="card_title ">
         <p id="nawalfecha"></p>
     </div>
 
     <div class="card_title1 title-white">
-        <p class="des" id="tipofecha1"></p>
+        <p>muerte repentina</p>
     </div>
     <div class="card_titlec title-white">
         <p>Nawal de la fecha</p>
     </div>
 </div>
-  </div>
+
 
 
 
@@ -76,33 +72,27 @@
                         <div class="card_image"> 
                             <img hidden id="imgsolar" src="" />
                          </div>
-                         <div class="carsur">
                         <div class="card_title ">
                             <p id="nawalsolar"></p>
                         </div>
 
                         <div class="card_title1 title-white">
-                            <p></p>
+                            <p>muerte repentina</p>
                         </div>
                         <div class="card_titlec title-white">
                             <p>Día año solar</p>
                         </div>
                     </div>
-                     </div>
+
 
 
 
                 </div>
               
-
-
-
-
-
                 <div class="centrar">
-                    <h2 id="txt" class="espacio" hidden>9 Lunaciones, energías totales: <b id="totalE"></b> </h2>
+                    <h2 id="txt" hidden>9 Lunaciones, energías totales: <b id="totalE"></b> </h2>
 
-                    <h6 class="espb" id="fecho"></h6>
+                    <h6 id="fecho">fecha</h6>
                 </div>
                 <div class="cards-list">
 
@@ -113,18 +103,16 @@
                         <div class="card_image"> 
                             <img hidden id="imgnAEI" src="" />
                          </div>
-                         <div class="carsur">
                         <div class="card_title ">
                             <p id="nawalAEI"></p>
                         </div>
 
                         <div class="card_title1 title-white">
-                            <p  class="des" id="tipoai" ></p>
+                            <p>muerte repentina</p>
                         </div>
                         <div class="card_titlec title-white">
                             <p>Nawal auxiliar de engendramiento</p>
                         </div>
-                    </div>
                     </div>
 
                     {{-- aqui nawal de engendramimento --}}
@@ -133,22 +121,15 @@
                         <div class="card_image">
                             <img hidden id="imgnE" src="" />
                         </div>
-                        <div class="carsur">
-                        <div class="card_titlen ">
-                            Norte
-                            <p id="nawalE"></p><div class="circuloNb"></div><div class="circuloN"></div>
+                        <div class="card_title ">
+                            <p id="nawalE"></p>
                         </div>
-                 
-                        <div class="card_title1 ">
-                            <p  class="des" id="tipoe"></p>
+                        <div class="card_title1 title-white">
+                            <p>muerte repentina</p>
                         </div>
-                        
-                        <div class="card_titlec title-white ">
-                       
-                            <p >Nawal de Engendramiento</p>
+                        <div class="card_titlec title-white">
+                            <p>Nawal de Engendramiento</p>
                         </div>
-
-                    </div>
                     </div>
 
                     {{-- aqui nawal aux derecho de engendramiento --}}
@@ -158,17 +139,15 @@
                         <div class="card_image">
                             <img hidden id="imgnAED" src="" />
                         </div>
-                        <div class="carsur">
                         <div class="card_title ">
                             <p id="nawalAED"></p>
                         </div>
                         <div class="card_title1 title-white">
-                            <p  class="des" id="tipoed"></p>
+                            <p>muerte repentina</p>
                         </div>
                         <div class="card_titlec title-white">
                             <p>Nawal Auxiliar de Engendramiento</p>
                         </div>
-                    </div>
                     </div>
 
                     {{-- aqui nawal auxiliar izquierdo --}}
@@ -178,38 +157,35 @@
                         <div class="card_image">
                             <img hidden id="imgnAI" src="" />
                         </div>
-                        <div class="carsur">
-                        <div class="card_titlen ">
-                            Este
-                            <p id="nawalAI"></p> <div class="circuloE"></div>
+                        <div class="card_title ">
+                            <p id="nawalAI"></p>
                         </div>
                         <div class="card_title1 title-white">
-                            <p class="des" id="tipoi"></p>
+                            <p>muerte repentina</p>
                         </div>
                         <div class="card_titlec title-white">
                             <p>Nawal Auxiliar Izquierdo</p>
                         </div>
                     </div>
-                    </div>
+
                     {{-- aqui nawal de la fecha --}}
 
 
-                    <div class="card fecha r" data-toggle="modal" data-target="#mn">
+                    <div class="card fecha" data-toggle="modal" data-target="#mn">
                         <div class="card_image">
                             <img hidden id="imgn" src="" />
                         </div>
-                        <div class="carsur">
                         <div class="card_title ">
                             <p id="nawal"></p>
                         </div>
                         <div class="card_title1 title-white">
-                            <p class="des" id="tipofecha"></p>
+                            <p>muerte repentina</p>
                         </div>
                         <div class="card_titlec title-white">
                             <p>Nawal de la fecha</p>
                         </div>
                     </div>
-                    </div>
+
 
                     {{-- aqui nawal auxiliar derecho --}}
 
@@ -218,20 +194,17 @@
                         <div class="card_image">
                             <img hidden id="imgnAD" src="" />
                         </div>
-                        <div class="carsur">
-                        <div class="card_titlen ">
-                            Oeste
-                            <p id="nawalAD"></p> <div class="circuloO"></div>
+                        <div class="card_title ">
+                            <p id="nawalAD"></p>
                         </div>
                         <div class="card_title1 title-white">
-                            <p class="des" id="tipod"></p>
+                            <p>muerte repentina</p>
                         </div>
                         <div class="card_titlec title-white">
                             <p>Nawal Auxiliar Derecho</p>
                         </div>
                     </div>
 
-                    </div>
 
 
                     {{-- aqui nawal auxiliar DE DESTINO --}}
@@ -241,17 +214,15 @@
                         <div class="card_image">
                             <img hidden id="imgnADI" src="" />
                         </div>
-                        <div class="carsur">
                         <div class="card_title ">
                             <p id="nawalADI"></p>
                         </div>
                         <div class="card_title1 title-white">
-                            <p class="des" id="tipoid"></p>
+                            <p>muerte repentina</p>
                         </div>
                         <div class="card_titlec title-white">
                             <p>Nawal Auxiliar de Destino</p>
                         </div>
-                    </div>
                     </div>
 
 
@@ -262,18 +233,14 @@
                         <div class="card_image">
                             <img hidden id="imgnD" src="" />
                         </div>
-                        <div class="carsur">
-                           
-                        <div class="card_titlen ">
-                            Sur
-                            <p id="nawalD"></p> <div class="circuloS"></div>
+                        <div class="card_title ">
+                            <p id="nawalD"></p>
                         </div>
                         <div class="card_title1 title-white">
-                            <p class="des" id="tipond"></p>
+                            <p>muerte repentina</p>
                         </div>
                         <div class="card_titlec title-white">
                             <p>Nawal de Destino</p>
-                        </div>
                         </div>
                     </div>
 
@@ -287,18 +254,17 @@
                         <div class="card_image">
                             <img hidden id="imgnADD" src="" />
                         </div>
-                        <div class="carsur">
                         <div class="card_title ">
                             <p id="nawalADD"></p>
                         </div>
                         <div class="card_title1 title-white">
-                            <p class="des" id="tipodd" ></p>
+                            <p>muerte repentina</p>
                         </div>
                         <div class="card_titlec title-white">
                             <p>Nawal Auxiliar de Destino</p>
                         </div>
                     </div>
-                    </div>
+
 
 
                 </div>
@@ -392,7 +358,7 @@
 
 <!-- Modal -->
 <div class="modal fade dark" id="mnAEI" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title centrar">Nawal Auxiliar Izquierdo de Engendramiento</h5>
@@ -403,7 +369,7 @@
             <div class="modal-body">
                 <p id="nawalAEI"></p>
 
-                <img class="" id="mimgnAEI" src="" width="950" alt="">
+                <img class="" id="mimgnAEI" src="" width="1000" alt="">
 
 
 
@@ -417,7 +383,7 @@
 
 <!-- Modal -->
 <div class="modal fade dark" id="mnE" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title centrar">Nawal de Engendramiento</h5>
@@ -428,7 +394,7 @@
             <div class="modal-body">
                 
 
-                <img class="" id="mimgnE" src="" width="950" alt="">
+                <img class="" id="mimgnE" src="" width="1000" alt="">
 
 
 
@@ -441,7 +407,7 @@
 
 <!-- Modal -->
 <div class="modal fade dark" id="mnAED" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title centrar">Nawal Auxiliar Derecho de Engendramiento</h5>
@@ -452,7 +418,7 @@
             <div class="modal-body">
                 <p id="nawalAEI"></p>
 
-                <img class="" id="mimgnAED" src="" width="950" alt="">
+                <img class="" id="mimgnAED" src="" width="1000" alt="">
 
 
 
@@ -466,7 +432,7 @@
 
 <!-- Modal -->
 <div class="modal fade dark" id="mnAI" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title centrar">Nawal Auxiliar Izquierdo </h5>
@@ -477,7 +443,7 @@
             <div class="modal-body">
                 <p id="nawalAEI"></p>
 
-                <img class="" id="mimgnAI" src="" width="950" alt="">
+                <img class="" id="mimgnAI" src="" width="1000" alt="">
 
 
 
@@ -491,7 +457,7 @@
 
 <!-- Modal -->
 <div class="modal fade dark" id="mn" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title centrar">Nawal de la Fecha</h5>
@@ -502,7 +468,7 @@
             <div class="modal-body">
                 <p id="nawalAEI"></p>
 
-                <img class="" id="mimgn" src="" width="950" alt="">
+                <img class="" id="mimgn" src="" width="1000" alt="">
 
 
 
@@ -516,7 +482,7 @@
 
 <!-- Modal -->
 <div class="modal fade dark" id="mnAD" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title centrar">Nawal Auxiliar Derecho </h5>
@@ -527,7 +493,7 @@
             <div class="modal-body">
                 <p id="nawalAEI"></p>
 
-                <img class="" id="mimgnAD" src="" width="950" alt="">
+                <img class="" id="mimgnAD" src="" width="1000" alt="">
 
 
 
@@ -541,7 +507,7 @@
 
 <!-- Modal -->
 <div class="modal fade dark" id="mnADI" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title centrar">Nawal Auxiliar Izquierdo de Destino</h5>
@@ -552,7 +518,7 @@
             <div class="modal-body">
                 <p id="nawalAEI"></p>
 
-                <img class="" id="mimgnADI" src="" width="950" alt="">
+                <img class="" id="mimgnADI" src="" width="1000" alt="">
 
 
 
@@ -566,7 +532,7 @@
 
 <!-- Modal -->
 <div class="modal fade dark" id="mnD" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title centrar">Nawal de Destino</h5>
@@ -577,7 +543,7 @@
             <div class="modal-body">
                 <p id="nawalAEI"></p>
 
-                <img class="" id="mimgnD" src="" width="950" alt="">
+                <img class="" id="mimgnD" src="" width="1000" alt="">
 
 
 
@@ -592,7 +558,7 @@
 
 <!-- Modal -->
 <div class="modal fade dark" id="mnADD" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title centrar">Nawal Auxiliar Derecho de Destino</h5>
@@ -603,7 +569,7 @@
             <div class="modal-body">
                 <p id="nawalAEI"></p>
 
-                <img class="" id="mimgnADD" src="" width="950" alt="">
+                <img class="" id="mimgnADD" src="" width="1000" alt="">
 
 
 
@@ -619,7 +585,7 @@
 
 <!-- Modal -->
 <div class="modal fade dark" id="mncargador" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title centrar">Nawal Auxiliar Derecho de Destino</h5>
@@ -630,7 +596,7 @@
             <div class="modal-body">
                 <p id="nawalAEI"></p>
 
-                <img class="" id="mimgncargador" src="" width="950" alt="">
+                <img class="" id="mimgncargador" src="" width="1000" alt="">
 
 
 
@@ -649,5 +615,4 @@
 
 
                             @endsection('layouts.app')
-                            <script src="{{ asset('js/moment.min.js') }}"></script>
                             <script src="{{ asset('js/cholqme.js') }}"></script>

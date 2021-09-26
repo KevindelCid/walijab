@@ -165,7 +165,7 @@ public function index(Request $request){
 //     // return response($noticias);
 //     // return view('cholqij.hoy');
     
-return view('cholqij.hoy');
+return view('cholqij/hoy');
     
         }
     

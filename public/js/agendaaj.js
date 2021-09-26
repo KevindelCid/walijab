@@ -15,7 +15,7 @@
 //   var form = document.createElement('form');
 //   form.setAttribute('method', method);
 //   form.setAttribute('action', path);
-
+ 
 //   for (var key in params) {
 //       if (params.hasOwnProperty(key)) {
 //           var hiddenField = document.createElement('input');
@@ -87,6 +87,17 @@ var id;
 //          $("#evento").modal();
 //           calendar.unselect();
 //         },
+
+
+
+select: function(arg) {
+
+
+$("#solicitarcitamodal").modal();
+
+},
+
+
         eventClick: function(info) {
             moment.lang('es', {
                 months: 'Enero_Febrero_Marzo_Abril_Mayo_Junio_Julio_Agosto_Septiembre_Octubre_Noviembre_Diciembre'.split('_'),

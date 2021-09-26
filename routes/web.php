@@ -27,6 +27,11 @@ Route::get('nawales/ver', function () {
     
     return view('nawales/ver');
 });
+
+Route::get('cholqij/inversa', function () { 
+    return view('cholqij/inversa'); 
+})->name('inversa');
+
 Route::get('aprender', function () {
     
     return view('aprender/index');
@@ -54,6 +59,10 @@ Route::get('ajqijab', function () {
     
     return view('ajqijab');
 });
+Route::get('cartas', function () {
+    
+    return view('cholqij/cartas');
+});
 Route::get('ajqijab/solicitud', function () {
     
     return view('ajqijab/solicitud');
@@ -68,15 +77,20 @@ Route::get('nawales/ver', function () {
     
     return view('nawales.ver');
 });
-Route::get('/cholqij/hoy', function () {
+Route::get('/cholqij', function () {
     
-    return view('cholqij/hoy');
-});
+    return view('cholqij/cholqij');
+})->name('cholqij');
+
+
+
 
 Route::get('/cholqij/hoy', function () {
     
     return view('cholqij.hoy');
+
 });
+
 Route::get('/', function () {
     
     return view('auth/login');
@@ -85,7 +99,7 @@ Route::get('/', function () {
 
 Route::resource('nawales/ver', 'NawalController'::class);
 Route::resource('ajqijab', 'AjqijabController'::class);
-Route::resource('cholqij', 'CholqinfoController'::class);
+// Route::resource('cholqij', 'CholqinfoController'::class);
 Route::resource('nawales/crear', 'NawalController'::class);
 Route::get('/cholqij/hoy',[CholqinfoController::class,'index']);
 Route::get('ajqijab',[AjqijabController::class,'index']);
@@ -107,6 +121,7 @@ Route::get('ajqijab/create', 'AjqijabController@create')->name('ajqijab.create')
 Route::get('/nawales/ver', 'NawalController@index')->name('nawales.ver');
 
 Route::get('/cholqij/hoy', 'CholqinfoController@index')->name('cholqij.hoy');
+
 
 Route::post('nawales/crear','NawalController@create')->name('nawales.crear');
 

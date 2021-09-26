@@ -16,7 +16,7 @@
 
                         <input type="submit" onclick="calcularNawal()" class="btn btn-primary" value="Calcular">
                         <input type="submit" onclick="calcularNawalHoy()" class="btn btn-success" value="Hoy">
-                        aqui es hoy
+                        aqui es cholqij
                     </div>
                 </div>
                 <div class="cards-list">
@@ -650,4 +650,4 @@
 
                             @endsection('layouts.app')
                             <script src="{{ asset('js/moment.min.js') }}"></script>
-                            <script src="{{ asset('js/cholqme.js') }}"></script>
+                            <script src="{{ asset('js/hoy.js') }}"></script>

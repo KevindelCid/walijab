@@ -26,7 +26,7 @@ document.getElementById('obj3').style.display = 'block';
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Wal'ijab</title>
+    <title>LuzMaya</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -42,7 +42,7 @@ document.getElementById('obj3').style.display = 'block';
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/cards.css') }}" rel="stylesheet">
     <link href="{{ asset('css/nawalestxt.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/ca.css') }}" rel="stylesheet">
+ 
 
 {{-- src de full calendar --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.9.0/main.css">
@@ -55,10 +55,10 @@ var baseURL = {!! json_encode(url('/')) !!}
 </head>
 <body class="fondo opacity">
     <div id="app">
-        <nav class="navbar navbar-expand-xl  ">
+        <nav class="navbar navbar-expand-md  ">
             <div class="container">
             
-                    <img id="" class="" src="{{ asset('storage').'/walijab.png' }}" width="120" alt="">
+                    <img id="" class="nav-logo" src="{{ asset('storage').'/luzmaya.png' }}" width="120" alt="">
               
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -67,9 +67,21 @@ var baseURL = {!! json_encode(url('/')) !!}
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto"> 
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('cholqij.hoy') }}">{{ __('Cholq\'ij (Hoy)') }}</a>
-                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             Cholq'ij
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="{{ route('cholqij') }}">Cholq'ij</a>
+                            <a class="dropdown-item" href="{{ route('cholqij.hoy') }}">Hoy</a>
+                              <a class="dropdown-item" href="{{ route('inversa') }}">inversa</a>
+                           
+                              
+                            </div>
+                          </li>
+
+
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('nawales.ver') }}">{{ __('Nawales') }}</a>
                         </li>
@@ -108,12 +120,12 @@ var baseURL = {!! json_encode(url('/')) !!}
                         @guest
                       
                         <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('Iniciar Sesión') }}</a>
                             </li>
                             
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Registrarse') }}</a>
                                 </li>
                                 
                             @endif
