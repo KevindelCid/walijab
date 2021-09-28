@@ -2,22 +2,89 @@
 @section('content')
    <link href="{{ asset('css/ca.css') }}" rel="stylesheet">
     <div class="container ">
+ 
+  <h2 for="name">Cholq'ij</h2>
+  <br>
         <div id="obj1" class="col-md-12">
             <div class="box">
 
                 <div class="row">
-                    <h2 for="name">Cholq'ij</h2>
-                    <br>
-                    <div class="col-md-4 form-group">
-
+                 
+                    <div class="col-md-3 form-group">
+                       
                         <input type="date" class="form-control" name="nawalDate" id="nawalDate">
                     </div>
                     <div class="col-md-4 form-group">
-
-                        <input type="submit" onclick="calcularNawal()" class="btn btn-primary" value="Calcular">
+                       
+                        <input type="submit" onclick="calcularNawal()" class="btn btn-primary" value="Calcular nawal">
                         <input type="submit" onclick="calcularNawalHoy()" class="btn btn-success" value="Hoy">
-                        aqui es cholqij
+                       
                     </div>
+                    
+                    <div class="col-md-2 form-group">
+                       
+
+<div class="form-group">
+ 
+    <select class="form-control" name="nawalS" id="nawalS">
+      <option id="BATZ">BATZ</option>
+      <option id="E">E</option>
+      <option id="AJ">AJ</option>
+      <option>IX</option>
+      <option>TZIKIN</option>
+      <option>AJMAQ</option>
+      <option>NOJ</option>
+      <option>TIJAX</option>
+      <option>KAWOQ</option>
+  
+      <option>AJPU</option>
+      <option>IMOX</option>
+      <option>IQ</option>
+      <option>AQABAL</option>
+      <option>KAT</option>
+      <option>KAN</option>
+      <option>KEME</option>
+      <option>KEEJ</option>
+      <option>QANIL</option>
+      <option>TOJ</option>
+      <option>TZI</option>
+    </select>
+  </div>
+                    </div>
+                    <div class="col-md-1 form-group">
+                    <div class="form-group">
+                       
+                        <select class="form-control" name="energiaS" id="energiaS">
+                          <option >1</option>
+                          <option >2</option>
+                          <option >3</option>
+                          <option>4</option>
+                          <option>5</option>
+                          <option>6</option>
+                          <option>7</option>
+                          <option>8</option>
+                          <option>9</option>
+                      
+                          <option>10</option>
+                          <option>11</option>
+                          <option>12</option>
+                          <option>13</option>
+                        
+                        </select>
+                      </div>
+
+
+
+                </div>
+                <div class="col-md-1 form-group">
+                <div class="form-group">
+  
+                    <input type="submit"
+                      class="form-control btn btn-success" onclick="naw()" value="Calcular fecha"id="" aria-describedby="helpId" placeholder="">
+                    
+                  </div>
+                </div>
+
                 </div>
                 <div class="cards-list">
 
@@ -650,4 +717,5 @@
 
                             @endsection('layouts.app')
                             <script src="{{ asset('js/moment.min.js') }}"></script>
-                            <script src="{{ asset('js/hoy.js') }}"></script>
+                            <script src="{{ asset('js/cholqme.js') }}"></script>
+                            <script src="{{ asset('js/meednaw.js') }}"></script>

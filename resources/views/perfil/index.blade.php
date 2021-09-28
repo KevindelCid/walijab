@@ -11,9 +11,71 @@
 
 <div class="col-md-12">
     <div class="box">
-<form action="" class="mb-5" method="" enctype="multipart/form-data">
-<div class="row">
+{{-- <form action="" class="mb-5" method="" enctype="multipart/form-data"> --}}
+<div class="row mb-5" >
+  <div class="col-md-2 form-group">
+                       
 
+    <div class="form-group">
+     
+        <select class="form-control" name="nawalS" id="nawalS">
+          <option id="BATZ">BATZ</option>
+          <option id="E">E</option>
+          <option id="AJ">AJ</option>
+          <option>IX</option>
+          <option>TZIKIN</option>
+          <option>AJMAQ</option>
+          <option>NOJ</option>
+          <option>TIJAX</option>
+          <option>KAWOQ</option>
+      
+          <option>AJPU</option>
+          <option>IMOX</option>
+          <option>IQ</option>
+          <option>AQABAL</option>
+          <option>KAT</option>
+          <option>KAN</option>
+          <option>KEME</option>
+          <option>KEEJ</option>
+          <option>QANIL</option>
+          <option>TOJ</option>
+          <option>TZI</option>
+        </select>
+      </div>
+                        </div>
+                        <div class="col-md-1 form-group">
+                        <div class="form-group">
+                           
+                            <select class="form-control" name="energiaS" id="energiaS">
+                              <option >1</option>
+                              <option >2</option>
+                              <option >3</option>
+                              <option>4</option>
+                              <option>5</option>
+                              <option>6</option>
+                              <option>7</option>
+                              <option>8</option>
+                              <option>9</option>
+                          
+                              <option>10</option>
+                              <option>11</option>
+                              <option>12</option>
+                              <option>13</option>
+                            
+                            </select>
+                          </div>
+    
+    
+    
+                    </div>
+                    <div class="col-md-9 form-group">
+                    <div class="form-group">
+      
+                        <input type="submit"
+                          class="form-control btn btn-success" onclick="mostrarNawalModal()" value="Agendar"id="ccn" name="ccn" aria-describedby="helpId" placeholder="">
+                        
+                      </div>
+                    </div>
 
   
 
@@ -64,7 +126,7 @@
 <div id="agenda"></div>
 </div>
 </div>
-</form>
+{{-- </form> --}}
     </div></div></div>
     
 <!-- Button trigger modal -->
@@ -85,7 +147,7 @@
           </button>
       </div>
 
-      <div class="modal-body">
+      <div class="modal-body white">
 
         
                <div class="row">

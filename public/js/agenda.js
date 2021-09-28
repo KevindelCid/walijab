@@ -1,5 +1,395 @@
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// aqui vamos a hacer que se pueda solicitar una fecha cholqij
+
+
+
+
+const nawalespg = [
+    // primera vuelta
+    "BATZ", "E", "AJ", "IX", "TZIKIN", "AJMAQ", "NOJ",
+    "TIJAX", "KAWOQ", "AJPU", "IMOX", "IQ", "AQABAL", "KAT", "KAN",
+    "KEME", "KEEJ", "QANIL", "TOJ", "TZI",
+    // segunda vuelta
+    "BATZ", "E", "AJ", "IX", "TZIKIN", "AJMAQ", "NOJ",
+    "TIJAX", "KAWOQ", "AJPU", "IMOX", "IQ", "AQABAL", "KAT", "KAN",
+    "KEME", "KEEJ", "QANIL", "TOJ", "TZI",
+    // tercera vuelta
+    "BATZ", "E", "AJ", "IX", "TZIKIN", "AJMAQ", "NOJ",
+    "TIJAX", "KAWOQ", "AJPU", "IMOX", "IQ", "AQABAL", "KAT", "KAN",
+    "KEME", "KEEJ", "QANIL", "TOJ", "TZI",
+
+    "BATZ", "E", "AJ", "IX", "TZIKIN", "AJMAQ", "NOJ",
+    "TIJAX", "KAWOQ", "AJPU", "IMOX", "IQ", "AQABAL", "KAT", "KAN",
+    "KEME", "KEEJ", "QANIL", "TOJ", "TZI",
+    // segunda vuelta
+    "BATZ", "E", "AJ", "IX", "TZIKIN", "AJMAQ", "NOJ",
+    "TIJAX", "KAWOQ", "AJPU", "IMOX", "IQ", "AQABAL", "KAT", "KAN",
+    "KEME", "KEEJ", "QANIL", "TOJ", "TZI",
+    // tercera vuelta
+    "BATZ", "E", "AJ", "IX", "TZIKIN", "AJMAQ", "NOJ",
+    "TIJAX", "KAWOQ", "AJPU", "IMOX", "IQ", "AQABAL", "KAT", "KAN",
+    "KEME", "KEEJ", "QANIL", "TOJ", "TZI",
+
+    "BATZ", "E", "AJ", "IX", "TZIKIN", "AJMAQ", "NOJ",
+    "TIJAX", "KAWOQ", "AJPU", "IMOX", "IQ", "AQABAL", "KAT", "KAN",
+    "KEME", "KEEJ", "QANIL", "TOJ", "TZI",
+    // segunda vuelta
+    "BATZ", "E", "AJ", "IX", "TZIKIN", "AJMAQ", "NOJ",
+    "TIJAX", "KAWOQ", "AJPU", "IMOX", "IQ", "AQABAL", "KAT", "KAN",
+    "KEME", "KEEJ", "QANIL", "TOJ", "TZI",
+    // tercera vuelta
+    "BATZ", "E", "AJ", "IX", "TZIKIN", "AJMAQ", "NOJ",
+    "TIJAX", "KAWOQ", "AJPU", "IMOX", "IQ", "AQABAL", "KAT", "KAN",
+    "KEME", "KEEJ", "QANIL", "TOJ", "TZI",
+
+    "BATZ", "E", "AJ", "IX", "TZIKIN", "AJMAQ", "NOJ",
+    "TIJAX", "KAWOQ", "AJPU", "IMOX", "IQ", "AQABAL", "KAT", "KAN",
+    "KEME", "KEEJ", "QANIL", "TOJ", "TZI",
+    // segunda vuelta
+    "BATZ", "E", "AJ", "IX", "TZIKIN", "AJMAQ", "NOJ",
+    "TIJAX", "KAWOQ", "AJPU", "IMOX", "IQ", "AQABAL", "KAT", "KAN",
+    "KEME", "KEEJ", "QANIL", "TOJ", "TZI",
+    // tercera vuelta
+    "BATZ", "E", "AJ", "IX", "TZIKIN", "AJMAQ", "NOJ",
+    "TIJAX", "KAWOQ", "AJPU", "IMOX", "IQ", "AQABAL", "KAT", "KAN",
+    "KEME", "KEEJ", "QANIL", "TOJ", "TZI",
+
+    "BATZ", "E", "AJ", "IX", "TZIKIN", "AJMAQ", "NOJ",
+    "TIJAX", "KAWOQ", "AJPU", "IMOX", "IQ", "AQABAL", "KAT", "KAN",
+    "KEME", "KEEJ", "QANIL", "TOJ", "TZI",
+    // segunda vuelta
+    "BATZ", "E", "AJ", "IX", "TZIKIN", "AJMAQ", "NOJ",
+    "TIJAX", "KAWOQ", "AJPU", "IMOX", "IQ", "AQABAL", "KAT", "KAN",
+    "KEME", "KEEJ", "QANIL", "TOJ", "TZI",
+    // tercera vuelta
+    "BATZ", "E", "AJ", "IX", "TZIKIN", "AJMAQ", "NOJ",
+    "TIJAX", "KAWOQ", "AJPU", "IMOX", "IQ", "AQABAL", "KAT", "KAN",
+    "KEME", "KEEJ", "QANIL", "TOJ", "TZI"];
+
+
+// const diass = ["11", "12", "13",
+//     "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+//     "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+//     "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+//     "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+//     "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+//     "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+//     "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+//     "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+//     "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+//     "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+//     "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+//     "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+//     "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+//     "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+//     "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+//     "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+//     "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+//     "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+//     "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+//     "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
+    const diassg = ["11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10","11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10","11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
+//encuentro la distancia entre la fecha 07/01/1001 y el día de hoy 
+//saco la cantidad de años transcurridos
+// saco los dias 
+// luego obtengo el nawal del dia de hoy 
+// con un array recorrer hasta encontrar la busquedaNawal y la busquedaEnergia 
+
+
+
+
+// la cantidad de repeticiones que contenga el bucle hasta encontrar lo buscado serán los días que hacen falta
+// para que llegue la fecha lunar seleccionada por el usuario
+// sumar los dias a la fecha actual para obtener la fecha en la que se encuentra dicha fecha lunar (12 E) 
+
+function naw() {
+
+    const tiempoTranscurrido = Date.now();
+    const hoy = new Date(tiempoTranscurrido);
+    
+return diaCholqijM(restaFechaHoyM(hoy.toLocaleDateString('en-US', { timeZone: 'America/Guatemala' })));
+
+
+}
+function diaCholqijM(dias) {
+
+    let n = Math.floor(dias / 260);
+    let nn = dias + 1 - n * 260;
+
+   
+    return  detNawalM(nn);
+
+}
+function detNawalM(diasC) {
+
+
+    let naw = Math.floor(diasC / 20);
+    let naww = diasC - naw * 20;
+    // lunas = lunacionesM(diasC - 1, naww - 1);
+    
+return lunacionesM(diasC - 1, naww - 1);
+
+
+}
+
+function restaFechaHoyM(f2) {
+
+
+
+    var aFecha1 = "07/01/1001".split('/');
+    var aFecha2 = f2.split('/');
+    var nfecha = aFecha2[1] + "/" + aFecha2[0] + "/" + aFecha2[2];
+    var anfecha = nfecha.split('/');
+
+    var fFecha1 = Date.UTC(aFecha1[2], aFecha1[1] - 1, aFecha1[0]);
+    var fFecha2 = Date.UTC(anfecha[2], anfecha[1] - 1, anfecha[0]);
+    var dif = fFecha2 - fFecha1;
+    var dias = Math.floor(dif / (1000 * 60 * 60 * 24));
+
+    // calcularCargador(nfecha);
+
+    return dias;
+
+}
+
+
+
+function lunacionesM(posDia, posNawal) {
+
+    var busuedaNawal = document.getElementById("nawalS").value;
+    var busquedaEnergia = document.getElementById("energiaS").value;
+    
+
+for(let i =0; i<=261; i++){
+
+    if(diassg[posDia+i] == busquedaEnergia && nawalespg[posNawal + i] == busuedaNawal){
+
+
+   return sumarDiasM(i);
+      
+    }
+
+ 
+}
+
+    
+
+}
+
+function sumarDiasM(d){
+
+    const tiempoTranscurrido = Date.now();
+    const hoy = new Date(tiempoTranscurrido);
+    let fecha = hoy.toLocaleDateString('en-US', { timeZone: 'America/Guatemala' });
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // var Fecha = new Date();
+    // var sFecha = fecha || (Fecha.getDate() + "/" + (Fecha.getMonth() +1) + "/" + Fecha.getFullYear());
+    // var sep = sFecha.indexOf('/') != -1 ? '/' : '-';
+    // var aFecha = sFecha.split(sep);
+    // var fecha = aFecha[2]+'/'+aFecha[1]+'/'+aFecha[0];
+    // fecha= new Date(fecha);
+    // fecha.setDate(fecha.getDate()+parseInt(d));
+    // var anno=fecha.getFullYear();
+    // var mes= fecha.getMonth()+1;
+    // var dia= fecha.getDate();
+    // mes = (mes < 10) ? ("0" + mes) : mes;
+    // dia = (dia < 10) ? ("0" + dia) : dia;
+    // var fechaFinal = dia+sep+mes+sep+anno;
+
+
+
+
+
+
+
+
+
+
+// Fecha de hoy hoy=new Date(); 
+// Milisegundos de 3 días mas 
+// (días * 24 horas * 60 minutos * 60 segundos * 1000 milésimas de segundo) 
+suma3dias= d*24*60*60*1000; 
+// Sumamos a la fecha de hoy en milisegundos, los 3 días más en milisegundos 
+// Tendremos una nueva variable en milisegundos de la fecha actual + 3 días 
+fechacontresdiasmas = hoy.getTime()+(d*24*60*60*1000); 
+// Si la queremos en formato fecha 
+fechacontresdiasmasformatada= new Date(fechacontresdiasmas);
+
+
+
+
+  
+    
+
+
+    // const tiempoTranscurrido = Date.now();
+    // const hoy = new Date(tiempoTranscurrido);
+    //  let woy =  moment(hoy).format("dddd DD [de] MMMM [de] YYYY");
+
+    // diaCholqij(restaFechaHoy(fechacontresdiasmasformatada.toLocaleDateString('en-US', { timeZone: 'America/Guatemala' })));
+
+return fechacontresdiasmasformatada.toLocaleDateString('en-US', { timeZone: 'America/Guatemala' });
+
+
+}
+
+// function diaCholqij(dias) {
+
+//     let n = Math.floor(dias / 260);
+//     let nn = dias + 1 - n * 260;
+//   alert("traigo "+dias+" dias");
+//     detNawal(nn);
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function mostrarPassword(){
     var cambio = document.getElementById("txtPassword");
     if(cambio.type == "password"){
@@ -38,6 +428,28 @@ function mostrarPassword2(){
 //     });
 // });
 
+function mostrarNawalModal(){
+
+    var bun = document.getElementById("nawalS").value;
+    var bue = document.getElementById("energiaS").value;
+
+    let m = moment(naw()).format("YYYY-MM-DD");
+    let hora_inicio = moment(naw()).format("hh:mm:ss");
+            let hora_finalizacion = moment(naw()).format("hh:mm:ss");
+            $("#fecha").val(m);
+            $("#titulo").val(bue+" "+bun);
+            $("#inicio").val(hora_inicio);
+            $("#finalizacion").val("30");
+            $("#evento").modal();
+
+             calendar.unselect();
+
+             
+}
+
+
+
+
 
 var calendar = null;
 
@@ -47,7 +459,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // let formulario = document.querySelector("form");
     
-   
+
     
 
 

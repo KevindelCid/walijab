@@ -28,9 +28,7 @@ Route::get('nawales/ver', function () {
     return view('nawales/ver');
 });
 
-Route::get('cholqij/inversa', function () { 
-    return view('cholqij/inversa'); 
-})->name('inversa');
+
 
 Route::get('aprender', function () {
     

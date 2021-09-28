@@ -46,7 +46,7 @@ const diass = ["11", "12", "13",
 
 function calcularCargador(f2){
 
-console.log(f2);
+
 
 
     var fechaCargador = "19/03/1907".split('/');
@@ -120,6 +120,7 @@ npivot = 13;
 
 // Función para calcular los días transcurridos entre dos fechas
 restaFechaHoy = function(f2){
+    
     var aFecha1 = "07/01/1001".split('/');
     var aFecha2 = f2.split('/');
     var nfecha = aFecha2[1]+"/"+aFecha2[0]+"/"+aFecha2[2] ;
@@ -264,7 +265,7 @@ function calcularNawal() {
     txt.removeAttribute("hidden");
 
 
-    moment.lang('es', {
+    moment.locale('es', {
         months: 'Enero_Febrero_Marzo_Abril_Mayo_Junio_Julio_Agosto_Septiembre_Octubre_Noviembre_Diciembre'.split('_'),
         monthsShort: 'Enero._Feb._Mar_Abr._May_Jun_Jul._Ago_Sept._Oct._Nov._Dec.'.split('_'),
         weekdays: 'Domingo_Lunes_Martes_Miercoles_Jueves_Viernes_Sábado'.split('_'),
@@ -308,7 +309,7 @@ function calcularNawal() {
 
 function calcularNawalHoy() {
 
-    moment.lang('es', {
+    moment.locale('es', {
         months: 'Enero_Febrero_Marzo_Abril_Mayo_Junio_Julio_Agosto_Septiembre_Octubre_Noviembre_Diciembre'.split('_'),
         monthsShort: 'Enero._Feb._Mar_Abr._May_Jun_Jul._Ago_Sept._Oct._Nov._Dec.'.split('_'),
         weekdays: 'Domingo_Lunes_Martes_Miercoles_Jueves_Viernes_Sábado'.split('_'),
@@ -424,7 +425,7 @@ function diaCholqij(dias) {
 
     let n = Math.floor(dias / 260);
     let nn = dias + 1 - n * 260;
-  
+ 
     detNawal(nn);
 
 }

@@ -75,7 +75,7 @@ var baseURL = {!! json_encode(url('/')) !!}
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <a class="dropdown-item" href="{{ route('cholqij') }}">Cholq'ij</a>
                             <a class="dropdown-item" href="{{ route('cholqij.hoy') }}">Hoy</a>
-                              <a class="dropdown-item" href="{{ route('inversa') }}">inversa</a>
+                            
                            
                               
                             </div>
