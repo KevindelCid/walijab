@@ -66,14 +66,14 @@ body{
  
 
   .card .card_image {
-    width: inherit;
-    height: inherit;
+    width: 90;
+    height: 110;
     margin-right: 20px;
     /* border-radius: 10px; */
   }
   
   .card .card_image img {
-    width: 135px;
+    width: 115px;
     height: inherit;
     margin-right: 20px;
     /* border-radius: 3px; */
