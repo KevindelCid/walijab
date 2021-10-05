@@ -104,7 +104,8 @@ public function mostrar(){
          "textColor"=>"#fff",
          "extendedProps"=>[
             "id_usuario"=>$valor->id_usuario,
-            "precio"=>$valor->precio
+            "precio"=>$valor->precio,
+            
          ]
 
       ]; 
@@ -183,7 +184,7 @@ public function listar(){
 
    // DB::select('SELECT * FROM agendas where');
    $eventos = 
-   DB::table('agendas')->where('id_usuario', auth()->user()->id )->get();
+   DB::table('agendas')->where('id_usuario', auth()->user()->id )->orwhere('cliente', auth()->user()->id )->get();
 
    // $eventos = Agenda::all();
    // dd($eventos);
@@ -219,16 +220,16 @@ public function listar(){
 public function validacion($fecha, $horai, $horaf){
 
 
-   $agenda = Agenda::select("*")
-      ->whereDate('fecha', $fecha)
-      ->whereBetween('hora_inicio',[$horai, $horaf])
-      ->orwhereBetween('hora_final',[$horai, $horaf])
-      ->whereTime('hora_inicio','>', $horai)
-      ->whereTime('hora_final','<',$horai)
-      ->where('id_usuario', '==', auth()->user()->id )
-      ->first();
+   // $agenda = Agenda::select("*")
+   //    ->whereDate('fecha', $fecha)
+   //    ->whereBetween('hora_inicio',[$horai, $horaf])
+   //    ->orwhereBetween('hora_final',[$horai, $horaf])
+   //    ->whereTime('hora_inicio','>', $horai)
+   //    ->whereTime('hora_final','<',$horai)
+   //    ->where('id_usuario', '==', auth()->user()->id )
+   //    ->first();
 
-      return $agenda == null ? true : false;
+      return  true ;
 
 
 }

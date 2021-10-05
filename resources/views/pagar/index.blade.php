@@ -23,13 +23,41 @@
 <p class="lead">
 
 <h2><strong>{{$titu}}</strong></h2>
-
+{{ $id_evento }}
 
 
 
 @if($precio>0)
 Estas apunto de pagar con paypal la cantidad de: 
 <h4>${{$precio}}</h4> 
+
+
+
+@if(isset(auth()->user()->id))
+
+<script> 
+let precio = {{ $precio }} ;
+let user_id = {{ auth()->user()->id }};
+let sid = "{{ Session::getId() }}";
+let idventa = "{{ $idventa }}";
+let idevento = {{ $id_evento }};
+
+</script>
+@else
+
+<script> 
+    let precio = {{ $precio }} ;
+    let user_id = "no proporcionado";
+    let sid = "{{ Session::getId() }}";
+    let idventa = "{{ $idventa }}";
+    let idevento = "{{ $id_evento }}";
+    </script>
+    @endif
+
+
+
+
+
 <div id="paypal-button-container"></div>
 @else
 <h4>${{$precio}}</h4> 

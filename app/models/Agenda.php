@@ -19,7 +19,8 @@ class Agenda extends Model
         "hora_final", 
         "descripcion",
         "estado",
-        "precio"
+        "precio",
+        "cliente"
        
 
     ];

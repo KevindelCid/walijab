@@ -138,6 +138,9 @@ Route::post('/perfil/config','HomeController@profileUpdate');
 
 Route::post('/perfil/eventito', 'AgendaController@eventito');
 
+Route::get('/pagar/verificacion', 'PagosController@token');
+
+
 Route::post('/evento', 'AjqijabController@evento');
 
 Route::post('pagar', 'PagosController@index')->name('pagar.index');

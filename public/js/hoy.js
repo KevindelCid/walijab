@@ -329,6 +329,8 @@ function calcularNawalHoy() {
      let woy =  moment(hoy).format("dddd DD [de] MMMM [de] YYYY");
 
     diaCholqij(restaFechaHoy(hoy.toLocaleDateString('en-US', { timeZone: 'America/Guatemala' })));
+    calcularAniosSolares(restarSolar(hoy.toLocaleDateString('en-US', { timeZone: 'America/Guatemala' })));
+
 
     let nAEI = document.querySelector("#nawalAEI")
     nAEI.innerHTML = lunas[0] + " " + lunas[1];

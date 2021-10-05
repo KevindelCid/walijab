@@ -75,7 +75,7 @@ DB::select("select  * from users where tipo = 2");
     //       'name' => 'Abigail',
     //       'state' => 'CA'
     //   ]);  
-    return array("datoid"=>$descripcion,"precio"=>$precio);
+    return array("datoid"=>$descripcion,"precio"=>$precio, "id"=>$id);
     
        // return response()->json(["ok"=>true ]);
        
@@ -91,25 +91,31 @@ DB::select("select  * from users where tipo = 2");
 
   
 
-    $eventos = DB::select("select agendas.id, agendas.fecha, agendas.titulo, agendas.hora_inicio, agendas.hora_final, agendas.titulo, agendas.estado from agendas inner join users on agendas.id_usuario = users.id where id_usuario = $id and tipo = 2");
+    $eventos = DB::select("select agendas.id, agendas.fecha, agendas.titulo, agendas.hora_inicio, agendas.hora_final, agendas.titulo, agendas.estado from agendas inner join users on agendas.id_usuario = users.id where id_usuario = $id and tipo = 2 ");
     $eve=[];
 
     foreach($eventos as $evento){
  
+
+      if($evento->estado == 1 | $evento->estado == 2 ){
+
+         $eve[] = [
  
-       $eve[] = [
+            "id"=>$evento->id,
+            "start"=>$evento->fecha . " " . $evento->hora_inicio,
+            "end"=>$evento->fecha . " ". $evento->hora_final,
+            "title"=>$evento->titulo,
+            "backgroundColor"=>$evento->estado == 1 | $evento->estado == 2 ? "#7ACF2A" : "#CF2A2A",
+            "textColor"=>"#fff",
+            "extendedProps"=>[
+              //  "id_usuario"=>$evento->id_usuario
+            ]
+   
+         ]; 
+
+      }
  
-          "id"=>$evento->id,
-          "start"=>$evento->fecha . " " . $evento->hora_inicio,
-          "end"=>$evento->fecha . " ". $evento->hora_final,
-          "title"=>$evento->titulo,
-          "backgroundColor"=>$evento->estado == 1 ? "#7ACF2A" : "#CF2A2A",
-          "textColor"=>"#fff",
-          "extendedProps"=>[
-            //  "id_usuario"=>$evento->id_usuario
-          ]
- 
-       ]; 
+      
  
  
     }

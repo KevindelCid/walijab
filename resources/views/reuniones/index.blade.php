@@ -4,6 +4,7 @@
 
 
 <input type="hidden" id="enlace" value="@if(isset($enlace)) {{$enlace}} @endif">
+@if($estado == 1)
 <script type="text/javascript">
 
 
@@ -27,7 +28,7 @@ const options = {
     // y luego guardar este dato en la base de datos para acceder a el despues y eliminarlo al completar la reunion
 
     roomName: enlace,
-    width: 700,
+    width: 1000,
     height: 500,
     parentNode: document.querySelector('#meet')
 };
@@ -44,6 +45,16 @@ window.onload = meetjit;
 
 
 <div class="container">
+    <h3>¡Bienvenido! la reunion empezará { hora y fecha }</h3>
+    
+
+    @else 
+    <div class="container">
+    <h3>No tienes acceso a esta reunión</h3>
+    
+    
+    @endif
+
 
 <div id="meet"></div>
  

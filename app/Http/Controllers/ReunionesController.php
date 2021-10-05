@@ -28,7 +28,28 @@ function indexdos(){
 
  public function index($enlace){
 
-return view('reuniones.index')->with("enlace",$enlace);
+
+
+  $evento = DB::table('agendas')->where('link',  $enlace )->get();
+
+
+  
+  foreach($evento as $event){
+   
+
+     $event->cliente == auth()->user()->id |  $event->id_usuario == auth()->user()->id ? $status = 1 : $status = 2;
+
+
+
+
+  }
+
+
+
+
+
+
+return view('reuniones.index')->with("enlace",$enlace)->with("estado",$status);
 
 
 

@@ -158,6 +158,10 @@ restaFechas = function (f2) {
     return dias;
 }
 
+
+
+
+
 function calcularNawal() {
 
 
@@ -171,6 +175,7 @@ function calcularNawal() {
     let nfe = fe[2] + "/" + fe[1] + "/" + fe[0];
     calcularCargador(nfe);
     diaCholqij(restaFechas(nfe));
+   calcularAniosSolares(restarSolar(nfe));
 
 
 
@@ -324,6 +329,7 @@ function calcularNawalHoy() {
      let woy =  moment(hoy).format("dddd DD [de] MMMM [de] YYYY");
 
     diaCholqij(restaFechaHoy(hoy.toLocaleDateString('en-US', { timeZone: 'America/Guatemala' })));
+    calcularAniosSolares(restarSolar(hoy.toLocaleDateString('en-US', { timeZone: 'America/Guatemala' })));
 
     let nAEI = document.querySelector("#nawalAEI")
     nAEI.innerHTML = lunas[0] + " " + lunas[1];

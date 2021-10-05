@@ -1,3 +1,6 @@
+
+
+
 paypal.Button.render({
     env: 'sandbox', // sandbox | production
     style: {
@@ -22,9 +25,9 @@ paypal.Button.render({
             payment: {
                 transactions: [
                     {
-                        amount: { total: '0.01', currency: 'MXN' }, 
-                        description:"Compra de productos a Develoteca:$0.01",
-                        custom:"Codigo"
+                        amount: { total: precio, currency: 'USD' }, 
+                        description:"Compra de un servicio en LuzMaya $"+precio,
+                        custom: sid+"#"+idventa
                     }
                 ]
             }
@@ -35,8 +38,40 @@ paypal.Button.render({
 
     onAuthorize: function(data, actions) {
         return actions.payment.execute().then(function() {
-            console.log(data);
-            window.location="verificador.php?paymentToken="+data.paymentToken+"&paymentID="+data.paymentID;
+           console.log(data.paymentID);
+          alert(idevento);
+            window.location = baseURL+'/pagar/verificacion?paymentToken='+data.paymentToken+"&paymentID="+data.paymentID+"&idevento="+idevento;
+
+
+
+        //    $.ajax({
+        //     type:'GET',
+        //     url: baseURL+'/pagar/verificacion?paymentToken='+data.paymentToken,
+           
+        //       headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
+              
+        //       success: function(response) {
+        
+                
+             
+        
+        //         // var resultado = JSON.parse(JSON.stringify(response));
+        //         // console.log(resultado["precio"]);
+           
+        //         // $("#descriE").text(resultado["datoid"]);
+        //         // $("#precioE").text("$"+resultado["precio"]);
+        //         // $("#descripcioned").val(resultado["datoid"]);
+        
+        
+        
+        
+        //     }
+        // });
+
+
+
+            // console.log(data);
+            // window.location="verificador.php?paymentToken="+data.paymentToken+"&paymentID="+data.paymentID;
         });
     }
 

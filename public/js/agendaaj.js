@@ -144,6 +144,7 @@ titulon = info.event.title;
                     $("#precioE").text("$"+resultado["precio"]);
                     $("#precio").val(resultado["precio"]);
                     $("#descripcioned").val(resultado["datoid"]);
+                    $("#ide").val(resultado["id"]);
             
             
             

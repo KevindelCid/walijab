@@ -133,6 +133,7 @@ este ajqij fue creado la fecha: {{ $gg->created_at }}
   <input type="hidden" name="hora" id="hora" value="">
   <input type="hidden" name="fecha" id="fecha" value="">
   <small id="descriE"></small>
+ <input type="hidden" name="ide" id="ide">
   <input type="hidden" name="descri" id="descri" value="">
      
         </div> 

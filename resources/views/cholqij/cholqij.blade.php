@@ -139,13 +139,13 @@
 
                      {{-- aqui día año solar --}}
 
-                     <div class="card normal" data-toggle="modal" data-target="#mnsolar">
+                     <div class="card normal" data-toggle="modal" data-target="#mimgSolar">
                         <div class="card_image"> 
                             <img hidden id="imgsolar" src="" />
                          </div>
                          <div class="carsur">
                         <div class="card_title ">
-                            <p id="nawalsolar"></p>
+                            <p id="nawalSolar"></p>
                         </div>
 
                         <div class="card_title1 title-white">
@@ -710,6 +710,30 @@
 
 
 
+<!-- Modal -->
+<div class="modal fade dark" id="mimgSolar" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title centrar">Día año Solar</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+            </div>
+            <div class="modal-body">
+                <p id="nawalAEI"></p>
+
+                <img class="" id="mimgSolarm" src="" width="950" alt="">
+
+
+
+
+            </div>
+          
+        </div>
+    </div>
+</div>
+
 
 
 
@@ -717,5 +741,6 @@
 
                             @endsection('layouts.app')
                             <script src="{{ asset('js/moment.min.js') }}"></script>
+                            <script src="{{ asset('js/solar.js') }}"></script>
                             <script src="{{ asset('js/cholqme.js') }}"></script>
                             <script src="{{ asset('js/meednaw.js') }}"></script>
