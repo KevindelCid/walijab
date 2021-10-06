@@ -97,12 +97,13 @@ $evento = DB::table('agendas')->where('id',  $idevento )->get();
 foreach($evento as $event){
 
    
-$link = auth()->user()->id."XfWS+".$event->id_usuario."XfWS+".$event->fecha."XfWS+".openssl_encrypt($event->hora_inicio,COD,KEY)."XfWS+".
-openssl_encrypt($event->hora_final,COD,KEY);
+$link = openssl_encrypt(auth()->user()->id."XfWS+".$event->id_usuario."XfWS+".$event->fecha,COD,KEY);
 
 }
 
 
+//$trans = array("h" => "-", "hello" => "hi", "hi" => "hello");
+$link = strtr($link, "/", "t");
 print_r($link);
 
 

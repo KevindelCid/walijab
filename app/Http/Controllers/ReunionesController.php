@@ -49,10 +49,20 @@ isset(auth()->user()->id)?
     
      $fecha_entrada = $event->fecha." ".$event->hora_inicio;
          
+$fecha =  $event->fecha;
+$hora = $event->hora_inicio;
+$titulo = $event->titulo;
+$descri = $event->descripcion;
+
+
+     
      if($fecha_actual > $fecha_entrada)
         {
       //   echo "La Reunión ha termindo";
-      $cadena = "La reunion ha empezado o terminado...";
+      $cadena = "La reunion está en curso";
+
+         
+
         }else
            {
          //   echo "la reunion aun no empieza \n";
@@ -61,6 +71,7 @@ isset(auth()->user()->id)?
            $diff = $date1->diff($date2);
            // will output 2 days
           $cadena =  "Faltan ".$diff->m." mes(es) ". $diff->days . ' dia(s) '.$diff->h." hora(s) ".$diff->i." minutos para el inicio de esta reunion";
+
 
            }
 
@@ -72,9 +83,8 @@ isset(auth()->user()->id)?
 
 
 
-
-
-return view('reuniones.index')->with("enlace",$enlace)->with("estado",$status)->with("cadena",$cadena);
+return view('reuniones.index')->with("enlace",$enlace)->with("estado",$status)->with("cadena",$cadena)
+->with("fecha",$fecha)->with("hora",$hora)->with("titu",$titulo)->with("descri",$descri);
 
 
 

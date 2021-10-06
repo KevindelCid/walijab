@@ -1,10 +1,28 @@
 @extends('layouts.app')
 @section('content')
 <script src='https://meet.jit.si/external_api.js'></script>
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,600,700,900&display=swap" rel="stylesheet">
+<link href="{{ asset('css/cuenta-regresiva.css') }}" rel="stylesheet">
+<div class="portada" id="portada"> 
+        <div class="header">
+        <h1 class="logotipo">{{$titu}}</h1>
+       
+        <p class="mensaje">{{$descri}}</p>
+         <p>La reunión empezará en: </p>
+    </div>
 
+    <div id="cuenta"></div>
 
-<input type="hidden" id="enlace" value="@if(isset($enlace)) {{$enlace}} @endif">
+    <div class="redes-sociales">
+        <a href="https://www.facebook.com/falconamsters" class="btn-red-social"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.twitter.com/falconamsters" class="btn-red-social"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.twitter.com/falconamsters" class="btn-red-social"><i class="fab fa-instagram"></i></a>
+    </div>
+</div>
+<main class="contenedor">
 @if($estado == 1)
+<input type="hidden" id="enlace" value="@if(isset($enlace)) {{$enlace}} @endif">
+
 <script type="text/javascript">
 
 
@@ -30,6 +48,7 @@ const options = {
     roomName: enlace,
     width: 1000,
     height: 500,
+    configOverwrite: { startWithVideoMuted: true },
     parentNode: document.querySelector('#meet')
 };
 const api = new JitsiMeetExternalAPI(domain, options);
@@ -44,33 +63,54 @@ window.onload = meetjit;
 </script>
 
 
-<div class="container">
-    <h3>¡Bienvenido! la reunion empezará { hora y fecha }</h3>
-    <h3>{{ $cadena }}</h3>
+<div class="container s" id="tex" hidden>
+    <h3>¡Bienvenido, la reunion ha empezado!</h3>
+    {{-- <h3>{{ $cadena }}</h3> --}}
     
-
-    @endif
-    @if($estado == 4)
-    <div class="container">
-    <h3>Aquí debería mostrar la tabla con las reuniones pendientes del usuario</h3>
-    
-    
-    @endif
-    @if($estado != 5 && $estado != 4 && $estado !=1)
-    <div class="container">
-    <h3>Usted no tiene acceso a esta reunión</h3>
-    
-    
-    @endif
-    @if($estado == 5 )
-    <div class="container">
-    <h3>No existe una reunion con este vinculo</h3>
-    
-    
-    @endif
-
-
-<div id="meet"></div>
+<div id="meet" class="containers" hidden></div>
  
+
+    
+
 </div>
+
+@endif
+
+@if($estado != 1)
+
+
+<div class="container s" id="tex" hidden>
+    <h3>No tienes acceso a esta reunión</h3>
+    {{-- <h3>{{ $cadena }}</h3> --}}
+</div>
+@endif
+
+</main>
+
+
+<script>
+
+var hora = "{{$hora}}";
+var fesha = "{{$fecha}}";
+var estado = {{ $estado }};
+
+
+var nhora = hora.split(':');
+var nFecha = fesha.split('-');
+
+
+    var anio, mes, dia, hora, minutos,segundos = 0;
+    segundos = nhora[2];
+    anio = nFecha[0];
+    mes = nFecha[1];
+    dia = nFecha[2];
+    hora = nhora[0];
+    minutos = nhora[1];
+    </script>
+ 
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+<script src="{{ asset('js/simplyCountdown.min.js') }}"></script>	
+<script src="{{ asset('js/countdown.js') }}"></script>	
+
+
 @endsection('layouts.app')

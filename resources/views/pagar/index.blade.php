@@ -23,7 +23,7 @@
 <p class="lead">
 
 <h2><strong>{{$titu}}</strong></h2>
-{{ $id_evento }}
+
 
 
 

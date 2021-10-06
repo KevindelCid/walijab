@@ -39,7 +39,7 @@ paypal.Button.render({
     onAuthorize: function(data, actions) {
         return actions.payment.execute().then(function() {
            console.log(data.paymentID);
-          alert(idevento);
+        
             window.location = baseURL+'/pagar/verificacion?paymentToken='+data.paymentToken+"&paymentID="+data.paymentID+"&idevento="+idevento;
 
 
