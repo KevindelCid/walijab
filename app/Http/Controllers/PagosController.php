@@ -65,8 +65,13 @@ $claveVentaRecuperada= openssl_decrypt($code[1], COD,KEY);
 
 
 
+// $pago = curl_init("https://api-m.sandbox.paypal.com/v2/checkout/orders");
+// curl_setopt($pago	, CURLOPT_HTTPHEADER,array("Content-Type: application/json","Authorization: Bearer ".$AccesToken));
 
 
+
+curl_setopt($venta	, CURLOPT_HTTPHEADER,array("Content-Type: application/json","Authorization: Bearer ".$AccesToken));
+curl_setopt($venta, CURLOPT_RETURNTRANSFER,TRUE);
 
 
 curl_close($venta);

@@ -1116,7 +1116,7 @@ input {
                 </div>
                 <!-- TERMS -->
                 <div class="terms">
-                    <h2>Terminos y condiciones</h2>
+                    {{-- <h2>Terminos y condiciones</h2>
                     <p class="small">Última modificación : Octubre 02, 2021</p>
                     <h3>Bienvenido a LuzMaya</h3>
                     <p>Por favor leer estos terminos y condiciones antes de crear una cuenta en esta pagina ya que al crear tu cuenta aceptas todos los terminos y condiciones.</p>
@@ -1148,11 +1148,11 @@ input {
                     <p>We may modify these terms or any additional terms that apply to a Service to, for example, reflect changes to the law or changes to our Services. You should look at the terms regularly. We’ll post notice of modifications to these terms on this page. We’ll post notice of modified additional terms in the applicable Service. Changes will not apply retroactively and will become effective no sooner than fourteen days after they are posted. However, changes addressing new functions for a Service or changes made for legal reasons will be effective immediately. If you do not agree to the modified terms for a Service, you should discontinue your use of that Service.</p>
                     <p>If you do not comply with these terms, and we don’t take action right away, this doesn’t mean that we are giving up any rights that we may have (such as taking action in the future).</p>
                     <p>The laws of California, U.S.A., excluding California’s conflict of laws rules, will apply to any disputes arising out of or relating to these terms or the Services. All claims arising out of or relating to these terms or the Services will be litigated exclusively in the federal or state courts of Santa Clara County, California, USA, and you and dp consent to personal jurisdiction in those courts.</p>
-                    <p>For information about how to contact dp, please visit our contact page.</p>
+                    <p>For information about how to contact dp, please visit our contact page.</p> --}}
                 </div>
 
                 <!-- RECOVERY -->
-                <div class="recovery">
+                {{-- <div class="recovery">
                     <h2>Password Recovery</h2>
                     <p>Enter either the <strong>email address</strong> or <strong>username</strong> on the account and <strong>click Submit</strong></p>
                     <p>We'll email instructions on how to reset your password.</p>
@@ -1160,11 +1160,11 @@ input {
                         <form class="recovery-form" method="POST" action="{{ route('login') }}">
                             @csrf
     
-                        <input type="text" class="input" id="user_recover" placeholder="Enter Email or Username Here">
+                        <input type="text" class="input" id="user_recover" placeholder="Ingrese su Correo Electr">
                         <input type="submit" class="button" value="Submit">
                     </form>
                     <p class="mssg">An email has been sent to you with further instructions.</p>
-                </div>
+                </div> --}}
 
                 <!-- SLIDER -->
                 <div class="content">
@@ -1249,9 +1249,11 @@ input {
                                         </a>
                                     @endif --}}
                     			</form>
+                                {{-- @if (Route::has('password.request')) --}}
                     			<div class="help-action">
-                    				<p><i class="fa fa-arrow-left" aria-hidden="true"></i><a class="forgot" href="#">Forgot your password?</a></p>
+                    				<p><i class="fa fa-arrow-left" aria-hidden="true"></i><a class="forgotd" href="{{ route('password.request') }}">¿Olvidó su contraseña?</a></p>
                     			</div>
+                                  {{-- @endif --}}
                     		</div>
                             <!-- TABS CONTENT SIGNUP -->
                     		<div id="signup-tab-content">

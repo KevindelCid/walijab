@@ -46,11 +46,25 @@ window.onload = meetjit;
 
 <div class="container">
     <h3>¡Bienvenido! la reunion empezará { hora y fecha }</h3>
+    <h3>{{ $cadena }}</h3>
     
 
-    @else 
+    @endif
+    @if($estado == 4)
     <div class="container">
-    <h3>No tienes acceso a esta reunión</h3>
+    <h3>Aquí debería mostrar la tabla con las reuniones pendientes del usuario</h3>
+    
+    
+    @endif
+    @if($estado != 5 && $estado != 4 && $estado !=1)
+    <div class="container">
+    <h3>Usted no tiene acceso a esta reunión</h3>
+    
+    
+    @endif
+    @if($estado == 5 )
+    <div class="container">
+    <h3>No existe una reunion con este vinculo</h3>
     
     
     @endif

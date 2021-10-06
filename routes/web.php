@@ -129,7 +129,7 @@ Route::get('/ajqijab/perfil/srcs/{id}', 'AjqijabController@verperfil2');
 
 Route::get('/ajqijab/solicitud', 'AjqijabController@solis');
 
-Route::get('/ajqijab/eres_ajqij', 'AjqijabController@eres')->name('ajqijab.eres');
+Route::get('/ajqijab/eres_ajqij', 'AjqijabController@eres')->name('ajqijab.eres')->middleware('auth','verified');
 
 Route::get('/perfil/config', 'PerfilController@config')->name('perfil.config');
 
@@ -138,12 +138,12 @@ Route::post('/perfil/config','HomeController@profileUpdate');
 
 Route::post('/perfil/eventito', 'AgendaController@eventito');
 
-Route::get('/pagar/verificacion', 'PagosController@token');
+Route::get('/pagar/verificacion', 'PagosController@token')->middleware('auth','verified');
 
 
 Route::post('/evento', 'AjqijabController@evento');
 
-Route::post('pagar', 'PagosController@index')->name('pagar.index');
+Route::post('pagar', 'PagosController@index')->name('pagar.index')->middleware('auth','verified');
 
 Route::post('/ajqijab/eventitoajqij', 'AgendaController@eventitoajqij');
 
@@ -156,21 +156,19 @@ Route::get('/perfil/listar', 'AgendaController@listar');
 
 Route::get('/ajqijab/perfil/listar', 'AjqijabController@listar');
 
-Route::get('/reuniones/{enlace}', 'ReunionesController@index')->name('reuniones.index');
-
-Route::get('/reuniones', 'ReunionesController@indexdos')->name('reuniones.index');
+Route::get('/reuniones/{enlace}', 'ReunionesController@index')->name('reuniones.index')->middleware('auth','verified');
+Route::get('/reuniones', 'ReunionesController@indexdos')->name('reuniones.index')->middleware('auth','verified');
 // Route::get('/reuniones/{enlace}', 'ReunionesController@enla');
 
 // Route::post('/perfil/agregar', 'EventoController@store');
 
 
 
-Route::resource('/perfil', 'AgendaController'::class)->middleware('auth');
+Route::resource('/perfil', 'AgendaController'::class)->middleware('auth','verified');
 
 
 
 
+Auth::routes(['verify'=> true]);
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home')->middleware('auth','verified');
