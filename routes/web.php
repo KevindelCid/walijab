@@ -169,6 +169,6 @@ Route::resource('/perfil', 'AgendaController'::class)->middleware('auth','verifi
 
 
 
-Auth::routes(['verify'=> true]);
+Auth::routes(['verify' => true]);
 
-Route::get('/home', 'HomeController@index')->name('home')->middleware('auth','verified');
+Route::get('/inicio', 'HomeController@index')->name('inicio');

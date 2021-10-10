@@ -128,7 +128,7 @@ $update2Venta == 1 ? $updateven2->save(): print_r("no se pudo actualizar el esta
 $state == "approved" ? $estado = 1 : $estado = 0;
 
 
-    return view("pagar/verificacion")->with('estado',$estado);
+    return view("inicio")->with('estado',$estado);
 
 }
 

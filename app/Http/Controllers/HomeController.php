@@ -8,6 +8,11 @@ use Hamcrest\Core\HasToString;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Symfony\Contracts\Service\Attribute\Required;
+use App\models\Agenda;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Carbon;
+use App\User;
+use Illuminate\Pagination\Paginator;
 
 class HomeController extends Controller
 {
@@ -28,8 +33,26 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+
+        date_default_timezone_set('America/Guatemala');
+        $fee =  Carbon::now()->format('Y-m-d');
+
+
+        $eventoss = DB::select("select * from agendas  inner join users on agendas.id_usuario = users.id where fecha >= '$fee'
+        and (cliente=".auth()->user()->id." or id_usuario = ".auth()->user()->id.")   ORDER BY fecha");
+
+
+        $eventos = new Paginator($eventoss, 1);
+
+
+        return view('inicio',compact('eventos','fee'));
     }
+
+
+
+
+
+
 
 
     public function profileUpdate(Request $request){

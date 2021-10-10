@@ -142,7 +142,7 @@ var baseURL = {!! json_encode(url('/')) !!}
                                      {{ __('Perfil') }}
                                  </a>
 
-                                    <a class="dropdown-item" href="{{ route('home') }}"
+                                    <a class="dropdown-item" href="{{ route('inicio') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Cerrar sesión') }}

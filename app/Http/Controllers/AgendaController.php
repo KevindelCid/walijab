@@ -82,7 +82,7 @@ if(isset($input["precio"])){
       
          }
 
-         dd($input);
+     
 }
 
 
